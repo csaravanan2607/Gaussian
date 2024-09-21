@@ -1,10 +1,10 @@
 # DATE : 
 # EXP - 6 Gaussian Elimination :
 
-## AIM:
+## AIM :
 To write a program to find the solution of a matrix using Gaussian Elimination.
 
-## Equipments Required:
+## Equipments Required :
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
@@ -25,7 +25,7 @@ Step 7: Use back substitution method to find the value of the variables and prin
 
 Step 8: End the program
 
-## Program:
+## Program :
 ```
 
 Program to find the solution of a matrix using Gaussian Elimination.
@@ -57,9 +57,9 @@ for i in range(n-2,-1,-1):
 for i in range(n):
      print('X%d = %0.2f' %(i,x[i]),end=' ')
 ```
-## Output:
+## Output :
 ![Gaussian Elimination ](https://github.com/user-attachments/assets/5abb2187-ae27-4496-bb69-66e52f4a64c1)
 
-## Result:
+## Result :
 Thus the program to find the solution of a matrix using Gaussian Elimination is written and verified using python programming.
 

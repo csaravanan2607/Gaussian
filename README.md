@@ -1,4 +1,5 @@
-# Gaussian Elimination
+# DATE : 
+# EXP - 6 Gaussian Elimination
 
 ## AIM:
 To write a program to find the solution of a matrix using Gaussian Elimination.
@@ -26,18 +27,12 @@ Step 8: End the program
 
 ## Program:
 ```
-/*
-Program to find the solution of a matrix using Gaussian Elimination.
-Developed by: 
-RegisterNumber: 
-*/
 
-/*
 Program to find the solution of a matrix using Gaussian Elimination.
-Developed by: C Saravanan
-RegisterNumber: 22008175
-*/
-
+Developed by: Saravanan C
+RegisterNumber: 212222110041
+```
+```
 import numpy as np
 import sys
 n=int(input())
@@ -45,7 +40,7 @@ a=np.zeros((n,n+1))
 x=np.zeros(n)
 for i in range(n):
     for j in range(n+1):
-        a[i][j]=float(input())
+         a[i][j]=float(input())
 for i in range(n):
     if a[i][j]==0.0:
         sys.exit('divide by zero detected!')
@@ -53,7 +48,6 @@ for i in range(n):
         ratio=a[j][i]/a[i][i]
         for k in range(n+1):
             a[j][k]=a[j][k]-ratio*a[i][k]
-            
 x[n-1] = a[n-1][n] / a[n-1][n-1]
 for i in range(n-2,-1,-1):
     x[i]=a[i][n]
@@ -61,10 +55,11 @@ for i in range(n-2,-1,-1):
         x[i]=x[i]-a[i][j]*x[j]
     x[i]=x[i]/a[i][i]
 for i in range(n):
-    print('X%d = %0.2f'%(i,x[i]),end=' ')
+     print('X%d = %0.2f' %(i,x[i]),end=' ')
 ```
 ## Output:
-![image](https://user-images.githubusercontent.com/121395849/215157401-394fd785-5951-4502-b691-a07e8ab09832.png)
+![Gaussian Elimination ](https://github.com/user-attachments/assets/5abb2187-ae27-4496-bb69-66e52f4a64c1)
+
 ## Result:
 Thus the program to find the solution of a matrix using Gaussian Elimination is written and verified using python programming.
 
